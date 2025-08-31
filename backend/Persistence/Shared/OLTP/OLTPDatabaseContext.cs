@@ -1,5 +1,6 @@
 ﻿using Expense.Tracker.Domain.Common;
 using Expense.Tracker.Persistence.Expense;
+using Expense.Tracker.Persistence.User;
 using Microsoft.EntityFrameworkCore;
 
 namespace Expense.Tracker.Persistence.Shared.OLTP
@@ -22,6 +23,7 @@ namespace Expense.Tracker.Persistence.Shared.OLTP
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new ExpenseCalendarsConfiguration());
+            modelBuilder.ApplyConfiguration(new UserMasterConfiguration());
         }
     }
 }
