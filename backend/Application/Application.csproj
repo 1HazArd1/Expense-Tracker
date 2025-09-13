@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BusinessExceptions\**" />
+    <EmbeddedResource Remove="BusinessExceptions\**" />
+    <None Remove="BusinessExceptions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
     <PackageReference Include="MediatR" Version="13.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
@@ -19,7 +25,6 @@
   	<ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BusinessExceptions\" />
     <Folder Include="Interface\Persistence\User\" />
   </ItemGroup>
 </Project>

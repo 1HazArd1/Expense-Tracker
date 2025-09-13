@@ -1,4 +1,4 @@
-﻿using Expense.Tracker.Application.Common.Models;
+﻿using Expense.Tracker.Application.Common.Models.Auth;
 using Expense.Tracker.Application.Common.Services.Cryptography;
 using Expense.Tracker.Application.Exceptions;
 using Expense.Tracker.Application.Interface.Persistence;

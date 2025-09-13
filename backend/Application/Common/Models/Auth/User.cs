@@ -1,4 +1,4 @@
-﻿namespace Expense.Tracker.Application.Common.Models
+﻿namespace Expense.Tracker.Application.Common.Models.Auth
 {
     public class User
     {

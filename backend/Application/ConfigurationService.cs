@@ -1,4 +1,5 @@
-﻿using Expense.Tracker.Application.Common.Services.Cryptography;
+﻿using Expense.Tracker.Application.Common.Services.Auth;
+using Expense.Tracker.Application.Common.Services.Cryptography;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
@@ -14,6 +15,7 @@ namespace Expense.Tracker.Application
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
             services.AddScoped(typeof(IPasswordHasher), typeof(PasswordHasher));
+            services.AddScoped(typeof(IAuthService), typeof(AuthService));
             return services;
         }
     }
